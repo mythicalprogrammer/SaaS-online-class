@@ -1,0 +1,3 @@
+def count_words(string)
+	string.gsub(/[^a-zA-Z]/i,' ').split.inject(Hash.new 0) { |counts, word| counts[word]  += 1; counts }
+end

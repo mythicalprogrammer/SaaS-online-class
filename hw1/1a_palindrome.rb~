@@ -1,0 +1,7 @@
+def palindrome?(string)
+	string = string.downcase.gsub(/[^a-z]/i,'')
+	string == string.reverse
+end
+palindrome?("Hello world! How's it going?")
+palindrome?("A man, a plan, a canal -- Panama")
+
